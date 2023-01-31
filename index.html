@@ -26,11 +26,26 @@
 
   <body>
     <header> </header>
-      <ion-toolbar>
-        <ion-title>Welcome to Pole Assist!</ion-title>
-      </ion-toolbar>
-      <img className="logo" alt="Pole Assist Logo" src="/public/assets/logo.png"/>
-    </header>
+      <toolbar>
+        <title className="pageTitle">Welcome to Pole Assist!</title>
+        <img className="logo" alt="Pole Assist Logo" src="/public/assets/logo.png"/>
+      </toolbar>
+          </header>
+
+  <content fullscreen>
+    <grid className="dashboard">
+      <row>
+        <col>
+          <button className="dashboardButton">
+            <label>
+              <h4>Skills</h4>
+            </label>
+
+          </button>
+        </col>
+      </row>
+    </grid>
+  </content>
 
 </body>
 </html>
