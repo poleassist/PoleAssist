@@ -36,25 +36,14 @@
     <grid className="dashboard">
       <row>
         <col>
-        <ion-icon name="trophy-outline"></ion-icon>
-          <button icon="" className="dashboardButton" color="primary" href="/skill">
+        <ion-icon name="trophy-outline" id="dashboardIcon" size="large"></ion-icon>
+          <button className="dashboardButton" color="primary" href="/skills">
             <label>
               <h4>Skills</h4>
             </label>
-            <IonCard
-                  button
-                  color="primary"
-                  className="dashboardButton"
-                  href="/skills"
-                >
-                  <IonCardContent>
-                    <IonCardTitle>
-                      <div className="dashboardHeading">
-                        <IonIcon
-                          icon={trophyOutline}
-                          id="dashboardIcon"
-                          size="large"
-                        ></IonIcon>
+            <ion-card button color="primary" className="dashboardButton" href="/skills">
+
+            </ion-card>
           </button>
         </col>
       </row>
