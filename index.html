@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Welcome to Pole Assist!</title>
+    <base href="/" />
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" type="image/png" href="%PUBLIC_URL%/assets/icon/favicon.png" />
+
+    <!--Fancy Heading Font-->
+  <link href="http://fonts.cdnfonts.com/css/high-spirited" rel="stylesheet"></link>
+
+     <!-- add to homescreen for ios  -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Ionic App" />
+    <meta name="apple-mobile-Titleweb-app-status-bar-style" content="black" />
+
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    
+    <header> </header>
+      <toolbar class="homeTopBar">
+        <title class="pageTitle">Welcome to Pole Assist!</title>
+        <img class="logo" alt="Pole Assist Logo" src="/public/assets/logo.png"/>
+      </toolbar>
+          </header>
+
+  <content fullscreen>
+    <grid class="dashboard">
+      <row>
+        <col>
+        <button class="dashboardButton" color="primary" href="/skills">
+          <label>
+            <h4>Skills</h4>
+          </label>
+<ion-card button color="primary" class="dashboardButton" href="/skills">
+<ion-icon name="trophy-outline" id="dashboardIcon" size="large"></ion-icon>
+         
+            </ion-card>
+         
+            
+            
+          </button>
+        </col>
+      </row>
+    </grid>
+  </content>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+</body>
+</html>

@@ -43,14 +43,16 @@ import {
   clipboardOutline,
 } from "ionicons/icons";
 import RoutineViewer from "./components/RoutineViewer";
-import Splash from "./components/Splash";
+
+setupConfig({
+  mode: "md",
+});
 
 setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
-      <Route exact path="/Splash"></Route>
       <IonTabs>
         <IonRouterOutlet>
           <Route exact path="/home">
@@ -109,3 +111,6 @@ const App: React.FC = () => (
 );
 
 export default App;
+function setupConfig(arg0: { mode: string }) {
+  throw new Error("Function not implemented.");
+}
