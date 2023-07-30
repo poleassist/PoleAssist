@@ -27,38 +27,43 @@
   </head>
 
   <body>
-    
-
-    
-    <header> </header>
-      <toolbar class="homeTopBar">
-        <title class="pageTitle">Welcome to Pole Assist!</title>
-        <img class="logo" alt="Pole Assist Logo" src="/public/assets/logo.png"/>
-      </toolbar>
-          </header>
-
-  <content fullscreen>
-    <grid class="dashboard">
-      <row>
-        <col>
-        <button class="dashboardButton" color="primary" href="/skills">
-          <label>
-            <h4>Skills</h4>
-          </label>
-<ion-card button color="primary" class="dashboardButton" href="/skills">
-<ion-icon name="trophy-outline" id="dashboardIcon" size="large"></ion-icon>
-         
-            </ion-card>
-         
-            
-            
-          </button>
-        </col>
-      </row>
-    </grid>
-  </content>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   
-</body>
+    <!--Navigation Bar-->
+     
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Pole Assist</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About Pole Assist</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Train
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Skills</a></li>
+                <li><a class="dropdown-item" href="#">Routine Builder</a></li>
+                <li><a class="dropdown-item" href="#">Training Plan</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    </body>
 </html>
