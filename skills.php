@@ -43,7 +43,7 @@
                 Train
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/skills.html">Skills</a></li>
+                <li><a class="dropdown-item" href="/skills.php">Skills</a></li>
                 <li><a class="dropdown-item disabled" href="routine-builder.html">Routine Builder</a></li>
                 <li><a class="dropdown-item disabled" href="training-plan.html">Training Plan</a></li>
               </ul>
