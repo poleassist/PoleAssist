@@ -1,5 +1,9 @@
 @import url('http://fonts.cdnfonts.com/css/high-spirited');
 
+.checkbox {
+  color: blue;
+}
+
 IonIcon.icon:active {
     outline-color:#3EDAD1;
   }
