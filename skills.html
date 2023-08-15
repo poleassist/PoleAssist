@@ -12,7 +12,7 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="styles.scss">
     <link rel="shortcut icon" type="image/png" href="%PUBLIC_URL%/assets/icon/favicon.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!--Fancy Heading Font-->
@@ -70,9 +70,11 @@
             
             <div class="list-group">
               <label class="list-group-item">
-                Lazy Drag
-                <input class="form-check-input me-1" type="checkbox" value="Left">
-                <input class="form-check-input me-1" type="checkbox" value="Right">
+                <label class="trick-label float-start">Lazy Drag</label>
+                
+                <input class="form-check-input float-end" type="checkbox" value="Left">
+                <input class="form-check-input float-end" type="checkbox" value="Right">
+                
                 </div>
                 
               </label>
