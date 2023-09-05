@@ -1,0 +1,10 @@
+/* Custom CSS for the checkboxes */
+.custom-checkbox-group {
+    display: inline-block; /* Display checkboxes inline */
+}
+
+.custom-checkbox {
+    width: 25px; /* Adjust the width as needed for larger checkboxes */
+    height: 25px; /* Adjust the height as needed for larger checkboxes */
+    margin-right: 10px; /* Add space between checkboxes */
+}

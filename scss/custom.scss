@@ -31,17 +31,3 @@ $form-check-label-disabled-opacity:        $form-check-input-disabled-opacity;
 $form-check-btn-check-disabled-opacity:    $btn-disabled-opacity;
 
 $form-check-inline-margin-end:    10rem;
-
-/* Define a SCSS variable for checkbox size */
-$checkbox-size: 25px;
-
-/* Custom CSS for the checkboxes */
-.custom-checkbox-group {
-    display: inline-block; /* Display checkboxes inline */
-}
-
-.custom-checkbox {
-    width: $checkbox-size; /* Use the variable for checkbox width */
-    height: $checkbox-size; /* Use the variable for checkbox height */
-    margin-right: 10px; /* Add space between checkboxes */
-}
