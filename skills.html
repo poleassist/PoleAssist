@@ -227,6 +227,8 @@
         </div>
       </div>
 
+      
+
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -236,24 +238,22 @@
         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
             <div class="list-group">
-            <p id="test"></p>
-            <script>
-              document.getElementById("test").innerHTML = 1 + 1
-            </script>
-              <label class="list-group-item">
-                <label class="trick-label float-start">Lazy Drag</label>
-                  <div class="custom-checkbox-group float-end">
-                    <input class="form-check-input custom-checkbox" type="checkbox" value="Left">
-                    <input class="form-check-input custom-checkbox" type="checkbox" value="Right">
-                  </div>
-              </label>
+              
+              <div id="trick-container-level2">
 
+              </div>
+
+                  
+                  
+                
 
               </div>
           </div>
         </div>
       </div>
 
+
+            
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -358,8 +358,266 @@
         </div>
       </div>
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
-    </body>
+    <script>
+
+//tricksLevel1
+const tricksLevel1 = [
+  "Lazy Drag",
+  "Knees Up",
+  "Skater",
+  "Fireman",
+  "Open Diamond",
+  "Closed Diamond",
+  "Flick",
+  "Reverse Diamond",
+  "Firefly",
+  "Bowtie",
+  "Stag",
+  "Momentum",
+  "Reverse Skater",
+  "Diva Seat",
+  "Basic Seat",
+  "Basic Climb",
+  "Inside Leg Spin",
+  "Cradle",
+  "Dive",
+  "Basic Teddy",
+  "Swan Slide",
+  "Body Rolls",
+  "Dirdy Birdy Rollover",
+  "Backwards Roll"
+];
+
+// tricksLevel2
+              const tricksLevel2 = 
+["Chair", 
+"Step-Up Spin",
+"Straight Leg Chair",
+"Wee Spin",
+"Side Saddle", 
+"Side Saddle Twist",
+"Side Saddle Stag",
+"Basic Lift",
+"Elbow Grip Seat",
+"Backwards Stag", 
+"Corkscrew", 
+"Leg Fans",
+"Basic invert", 
+"Crucifix",
+"Plank",
+"Split Leg Plank", 
+"Hang Back",
+"Butterfly",
+"Handstand",
+"Hollywood Spin",
+];
+
+// tricksLevel3
+const tricksLevel3 = [
+  "Carousel",
+  "Boomerang",
+  "D Spin",
+  "Side climb",
+  "Inverted V",
+  "Flatline Scorpio",
+  "Scorpio",
+  "Gemini",
+  "Side V",
+  "Sitting V",
+  "Juliet Spin",
+  "Angel",
+  "Sitting Stag",
+  "Sitting Splits",
+  "Stargazer",
+  "Split grip Scissor Leg Kick with Attitude",
+  "Drama Queen",
+  "Sitting V Thread Throughs",
+  "Sundial",
+  "Babydoll",
+  "Mary Poppins"
+];
+
+// tricksLevel4
+const tricksLevel4 = [
+  "Aerial Invert",
+  "Inverted Pike",
+  "Split V Pike",
+  "Kitty Cat",
+  "Iguana",
+  "Tammy",
+  "Princess",
+  "Claw Grip Split",
+  "Flipped Gemini",
+  "Tinkerbell Sit",
+  "Vomitron Version1 (DVD Cover)",
+  "Tear Drop",
+  "Gemini/ Scorpio Back leg Variations",
+  "Tick Tock v1",
+  "Handstand Pike",
+  "Handstand Butterfly",
+  "Handstand Scorpio",
+  "Corkscrew 2 (prep for one hand split)"
+];
+
+// tricksLevel5
+const tricksLevel5 = [
+  "Aerial Invert V",
+  "Caterpillar",
+  "Extended Butterfly",
+  "Lois Lane",
+  "Shooting Star",
+  "Jamilla V",
+  "Side Figurehead",
+  "Martini",
+  "Iguana sideways",
+  "Pretzel",
+  "Egg",
+  "Cupid",
+  "Swing (body away from the pole and back)",
+  "Goddess",
+  "Leg Hang Body Swaps",
+  "Embrace",
+  "Mary Poppins Version 3 (Airwalk inside low)",
+  "Top Knee Hook (Fake Princess)",
+  "Handstand Anterior Roll Out"
+];
+
+// tricksLevel6
+const tricksLevel6 = [
+  "Choppers",
+  "Brass Monkey (from Hangback)",
+  "Superman",
+  "Cup Shouldermount (Rollouts)",
+  "Hood Ornament",
+  "Inverted D",
+  "Inverted Teddy",
+  "Tinkerbell",
+  "Iguana planche",
+  "Russian fish",
+  "Broken Doll",
+  "Cocoon",
+  "Stag Leg Split",
+  "Claw Grip Butterfly Kick & Glide",
+  "Mermaid"
+];
+
+// tricksLevel7
+const tricksLevel7 = [
+  "Brass Monkey (Ground)",
+  "Backwards Climb",
+  "Claw Grip Invert",
+  "Teddy",
+  "Side Splits on Pole",
+  "Shouldermount Leg Variations – V, pencil, jack knife.",
+  "Pole Assisted Handstand",
+  "Double Leg Hooks",
+  "Sore Knees",
+  "Vomitron Version 2",
+  "Vertical Jade",
+  "Reiki Split",
+  "Allegra",
+  "Upright Sailboat",
+  "Vortex",
+  "Flag - Brass Monkey"
+];
+
+// tricksLevel8
+const tricksLevel8 = [
+  "Ayasha",
+  "Ragdoll (Flashy wee spin)",
+  "Jade",
+  "Crescent Moon",
+  "Genie",
+  "Shouldermount princess grip/ Chinese grip",
+  "Warrior (running man)",
+  "Brass Monkey – Pencil",
+  "Chopsticks",
+  "Embrace",
+  "Eros",
+  "Lotus/ Remi Sit",
+  "Banana Split",
+  "Shouldermount Rollover",
+  "Shouldermount Waves",
+  "Shouldermount Around the World",
+  "Suzie Q Pretzel",
+  "Dove",
+  "Drop",
+  "Irish Superman",
+  "Seahorse",
+  "Beautiful Pose",
+  "Garbage Grinder",
+  "Jallegra",
+  "Plus Sign"
+];
+
+// tricksLevel9
+const tricksLevel9 = [
+  "Handspring – Normal",
+  "Aerial Shouldermount",
+  "Russian Splits",
+  "Tabletop Invert",
+  "Birds Nest",
+  "Claw Grip Flip",
+  "Broomstick (Chest mount)",
+  "Hip Hold",
+  "Little Graceful Spin (Tasha/ Melody)",
+  "Miss Filly Split",
+  "One Armed Split",
+  "Dragon Tail (V)",
+  "Scorpio Meathook Split (Tasha)",
+  "Shouldermount bounce down",
+  "Deville Side V",
+  "Yogini",
+  "Gargoyle",
+  "Lolo",
+  "Claw Grip Split 2",
+  "Meat Hook",
+  "Shouldermount ‘Catch’ Trapped Leg",
+  "Tulip"
+];
+
+// tricksLevel10
+const tricksLevel10 = [
+  "Twisty Handspring",
+  "Meat Hook",
+  "Full Moon",
+  "Janeiro",
+  "Russian Butterfly",
+  "Russian Layback",
+  "Marion Amber",
+  "Iron X",
+  "Rocketman",
+  "Shouldermount bounce up",
+  "Titanic",
+  "Libelulla",
+  "Machine Gun",
+  "Sneaky V"
+];
+
+
+          const containerLevel1 = document.getElementById('trick-container-level1');
+          const containerLevel2 = document.getElementById('trick-container-level2');
+
+            for (let i = 0; i < tricksLevel2.length; i++) {
+              const trickName = tricksLevel2[i];
+              const listItem = document.createElement('label');
+              listItem.classList.add('list-group-item');
+
+              listItem.innerHTML = `
+                ${trickName}
+                <div class="custom-checkbox-group float-end">
+                        <input class="form-check-input custom-checkbox" type="checkbox" value="Left">
+                        <input class="form-check-input custom-checkbox" type="checkbox" value="Right">
+                      </div>
+              `;
+
+            containerLevel2.appendChild(listItem); // Append the generated item to the container
+            }
+            
+            const accordion = new bootstrap.Collapse(document.getElementById('collapseTwo'));
+            </script>
+  </body>
 </html>
