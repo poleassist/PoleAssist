@@ -58,7 +58,7 @@
 
     <div class="accordion" id="accordionExample">
 
-      <div class="accordion-item">
+      <!-- <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
             Level 1
@@ -216,7 +216,8 @@
               </div>
               </label>
               <label class="list-group-item">
-                <label class="trick-label float-start">Backwards Roll</label>
+                <label class="trick-label float-start">
+                  Backwards Roll</label>
                 <div class="custom-checkbox-group float-end">               
                 <input class="form-check-input custom-checkbox" type="checkbox" value="Left">
                 <input class="form-check-input custom-checkbox" type="checkbox" value="Right">
@@ -225,10 +226,29 @@
                 </div>           
           </div> 
         </div>
-      </div>
+      </div> -->
+<!-- Level 1 List -->
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+      Level 1
+    </button>
+  </h2>
+  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+      <div class="list-group">
+          
+            <div id="trick-container-level1">
+            </div>
 
+              <!-- Dynamically populated tricks are called here -->             
+
+            </div>
+    </div>
+  </div>
+</div>
       
-
+      <!-- Level 2 List -->
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -238,22 +258,18 @@
         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
             <div class="list-group">
-              
               <div id="trick-container-level2">
 
               </div>
-
+                    <!-- Dynamically populated tricks are called here -->             
                   
-                  
-                
-
-              </div>
+                    
+                  </div>
           </div>
         </div>
       </div>
 
-
-            
+      <!-- Level 3 List -->
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -262,7 +278,9 @@
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <div class="list-group">
+              <div id="trick-container-level3"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -275,7 +293,9 @@
         </h2>
         <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <div class="list-group">
+              <div id="trick-container-level4"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -288,8 +308,9 @@
         </h2>
         <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
+            <div class="list-group">
+              <div id="trick-container-level5"></div>
+            </div>          </div>
         </div>
       </div>
 
@@ -301,8 +322,9 @@
         </h2>
         <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
+            <div class="list-group">
+              <div id="trick-container-level6"></div>
+            </div>          </div>
         </div>
       </div>
 
@@ -314,8 +336,9 @@
         </h2>
         <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
+            <div class="list-group">
+              <div id="trick-container-level7"></div>
+            </div>          </div>
         </div>
       </div>
 
@@ -327,8 +350,9 @@
         </h2>
         <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
+            <div class="list-group">
+              <div id="trick-container-level8"></div>
+            </div>          </div>
         </div>
       </div>
 
@@ -340,8 +364,9 @@
         </h2>
         <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
+            <div class="list-group">
+              <div id="trick-container-level9"></div>
+            </div>          </div>
         </div>
       </div>
 
@@ -353,14 +378,13 @@
         </h2>
         <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
+            <div class="list-group">
+              <div id="trick-container-level10"></div>
+            </div>          </div>
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    
     <script>
 
 //tricksLevel1
@@ -392,8 +416,8 @@ const tricksLevel1 = [
 ];
 
 // tricksLevel2
-              const tricksLevel2 = 
-["Chair", 
+const tricksLevel2 = [ 
+"Chair", 
 "Step-Up Spin",
 "Straight Leg Chair",
 "Wee Spin",
@@ -412,7 +436,7 @@ const tricksLevel1 = [
 "Hang Back",
 "Butterfly",
 "Handstand",
-"Hollywood Spin",
+"Hollywood Spin"
 ];
 
 // tricksLevel3
@@ -511,7 +535,7 @@ const tricksLevel7 = [
   "Claw Grip Invert",
   "Teddy",
   "Side Splits on Pole",
-  "Shouldermount Leg Variations – V, pencil, jack knife.",
+  "Shouldermount Leg Variations: V, pencil, jack knife.",
   "Pole Assisted Handstand",
   "Double Leg Hooks",
   "Sore Knees",
@@ -533,11 +557,11 @@ const tricksLevel8 = [
   "Genie",
   "Shouldermount princess grip/ Chinese grip",
   "Warrior (running man)",
-  "Brass Monkey – Pencil",
+  "Brass Monkey Pencil",
   "Chopsticks",
   "Embrace",
   "Eros",
-  "Lotus/ Remi Sit",
+  "Lotus/Remi Sit",
   "Banana Split",
   "Shouldermount Rollover",
   "Shouldermount Waves",
@@ -555,7 +579,7 @@ const tricksLevel8 = [
 
 // tricksLevel9
 const tricksLevel9 = [
-  "Handspring – Normal",
+  "Handspring Normal",
   "Aerial Shouldermount",
   "Russian Splits",
   "Tabletop Invert",
@@ -575,7 +599,7 @@ const tricksLevel9 = [
   "Lolo",
   "Claw Grip Split 2",
   "Meat Hook",
-  "Shouldermount ‘Catch’ Trapped Leg",
+  "Shouldermount Catch Trapped Leg",
   "Tulip"
 ];
 
@@ -600,6 +624,30 @@ const tricksLevel10 = [
 
           const containerLevel1 = document.getElementById('trick-container-level1');
           const containerLevel2 = document.getElementById('trick-container-level2');
+          const containerLevel3 = document.getElementById('trick-container-level3');
+          const containerLevel4 = document.getElementById('trick-container-level4');
+          const containerLevel5 = document.getElementById('trick-container-level5');
+          const containerLevel6 = document.getElementById('trick-container-level6');
+          const containerLevel7 = document.getElementById('trick-container-level7');
+          const containerLevel8 = document.getElementById('trick-container-level8');
+          const containerLevel9 = document.getElementById('trick-container-level9');
+          const containerLevel10 = document.getElementById('trick-container-level10');
+
+            for (let i = 0; i < tricksLevel1.length; i++) {
+              const trickName = tricksLevel1[i];
+              const listItem = document.createElement('label');
+              listItem.classList.add('list-group-item');
+
+              listItem.innerHTML = `
+                ${trickName}
+                <div class="custom-checkbox-group float-end">
+                        <input class="form-check-input custom-checkbox" type="checkbox" value="Left">
+                        <input class="form-check-input custom-checkbox" type="checkbox" value="Right">
+                      </div>
+              `;
+
+            containerLevel1.appendChild(listItem); // Append the generated item to the container
+            }
 
             for (let i = 0; i < tricksLevel2.length; i++) {
               const trickName = tricksLevel2[i];
@@ -616,8 +664,140 @@ const tricksLevel10 = [
 
             containerLevel2.appendChild(listItem); // Append the generated item to the container
             }
+
+            for (let i = 0; i < tricksLevel3.length; i++) {
+              const trickName = tricksLevel3[i];
+              const listItem = document.createElement('label');
+              listItem.classList.add('list-group-item');
+
+              listItem.innerHTML = `
+                ${trickName}
+                <div class="custom-checkbox-group float-end">
+                        <input class="form-check-input custom-checkbox" type="checkbox" value="Left">
+                        <input class="form-check-input custom-checkbox" type="checkbox" value="Right">
+                      </div>
+              `;
+
+            containerLevel3.appendChild(listItem); // Append the generated item to the container
+            }
+
+            for (let i = 0; i < tricksLevel4.length; i++) {
+              const trickName = tricksLevel4[i];
+              const listItem = document.createElement('label');
+              listItem.classList.add('list-group-item');
+
+              listItem.innerHTML = `
+                ${trickName}
+                <div class="custom-checkbox-group float-end">
+                        <input class="form-check-input custom-checkbox" type="checkbox" value="Left">
+                        <input class="form-check-input custom-checkbox" type="checkbox" value="Right">
+                      </div>
+              `;
+
+            containerLevel4.appendChild(listItem); // Append the generated item to the container
+            }
+
+            for (let i = 0; i < tricksLevel5.length; i++) {
+              const trickName = tricksLevel5[i];
+              const listItem = document.createElement('label');
+              listItem.classList.add('list-group-item');
+
+              listItem.innerHTML = `
+                ${trickName}
+                <div class="custom-checkbox-group float-end">
+                        <input class="form-check-input custom-checkbox" type="checkbox" value="Left">
+                        <input class="form-check-input custom-checkbox" type="checkbox" value="Right">
+                      </div>
+              `;
+
+            containerLevel5.appendChild(listItem); // Append the generated item to the container
+            }
+
+            for (let i = 0; i < tricksLevel6.length; i++) {
+              const trickName = tricksLevel6[i];
+              const listItem = document.createElement('label');
+              listItem.classList.add('list-group-item');
+
+              listItem.innerHTML = `
+                ${trickName}
+                <div class="custom-checkbox-group float-end">
+                        <input class="form-check-input custom-checkbox" type="checkbox" value="Left">
+                        <input class="form-check-input custom-checkbox" type="checkbox" value="Right">
+                      </div>
+              `;
+
+            containerLevel6.appendChild(listItem); // Append the generated item to the container
+            }
+
+            for (let i = 0; i < tricksLevel7.length; i++) {
+              const trickName = tricksLevel7[i];
+              const listItem = document.createElement('label');
+              listItem.classList.add('list-group-item');
+
+              listItem.innerHTML = `
+                ${trickName}
+                <div class="custom-checkbox-group float-end">
+                        <input class="form-check-input custom-checkbox" type="checkbox" value="Left">
+                        <input class="form-check-input custom-checkbox" type="checkbox" value="Right">
+                      </div>
+              `;
+
+            containerLevel7.appendChild(listItem); // Append the generated item to the container
+            }
+
+            for (let i = 0; i < tricksLevel8.length; i++) {
+              const trickName = tricksLevel8[i];
+              const listItem = document.createElement('label');
+              listItem.classList.add('list-group-item');
+
+              listItem.innerHTML = `
+                ${trickName}
+                <div class="custom-checkbox-group float-end">
+                        <input class="form-check-input custom-checkbox" type="checkbox" value="Left">
+                        <input class="form-check-input custom-checkbox" type="checkbox" value="Right">
+                      </div>
+              `;
+
+            containerLevel8.appendChild(listItem); // Append the generated item to the container
+            }
+
+            for (let i = 0; i < tricksLevel9.length; i++) {
+              const trickName = tricksLevel9[i];
+              const listItem = document.createElement('label');
+              listItem.classList.add('list-group-item');
+
+              listItem.innerHTML = `
+                ${trickName}
+                <div class="custom-checkbox-group float-end">
+                        <input class="form-check-input custom-checkbox" type="checkbox" value="Left">
+                        <input class="form-check-input custom-checkbox" type="checkbox" value="Right">
+                      </div>
+              `;
+
+            containerLevel9.appendChild(listItem); // Append the generated item to the container
+            }
+
+            for (let i = 0; i < tricksLevel10.length; i++) {
+              const trickName = tricksLevel10[i];
+              const listItem = document.createElement('label');
+              listItem.classList.add('list-group-item');
+
+              listItem.innerHTML = `
+                ${trickName}
+                <div class="custom-checkbox-group float-end">
+                        <input class="form-check-input custom-checkbox" type="checkbox" value="Left">
+                        <input class="form-check-input custom-checkbox" type="checkbox" value="Right">
+                      </div>
+              `;
+
+            containerLevel10.appendChild(listItem); // Append the generated item to the container
+            }
             
             const accordion = new bootstrap.Collapse(document.getElementById('collapseTwo'));
-            </script>
+      </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
   </body>
 </html>
